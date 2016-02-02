@@ -8,7 +8,7 @@ RUN apt-get update && apt-get install --no-install-recommends -y \
 # Install Rocksdb
 RUN cd /tmp && git clone https://github.com/facebook/rocksdb.git && \
   cd rocksdb && \
-  git checkout v3.12.1 && \
+  git checkout v4.1 && \
   make shared_lib && \
   mkdir -p /usr/local/rocksdb/lib && \
   mkdir /usr/local/rocksdb/include && \
